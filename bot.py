@@ -12,7 +12,7 @@ from sympy import symbols, Eq, solve
 # ===== CONFIG SÉCURISÉE =====
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 OPENAI_KEY = os.getenv("OPENAI_KEY")
-ADMIN_ID = int(os.getenv("ADMIN_ID"))
+ADMIN_ID = int(os.getenv("ADMIN_ID", "5791168274"))
 
 bot = telebot.TeleBot(TOKEN)
 openai.api_key = OPENAI_KEY
